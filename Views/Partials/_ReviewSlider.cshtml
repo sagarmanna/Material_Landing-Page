@@ -1,0 +1,28 @@
+@model List<MaterialLandingApp.Models.ReviewModel>
+
+<div id="reviewCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+@for (int i = 0; i < Model.Count; i++)
+{
+var active = i == 0 ? "active" : "";
+
+<div class="carousel-item @active">
+
+<div class="card text-center shadow p-4">
+
+<h5>@Model[i].Company</h5>
+
+<p>@Model[i].Comment</p>
+
+<strong>@Model[i].Customer</strong>
+
+</div>
+
+</div>
+}
+
+</div>
+
+</div>

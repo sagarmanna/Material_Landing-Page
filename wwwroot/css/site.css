@@ -1,0 +1,82 @@
+/* Root font size */
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Body spacing */
+body {
+    margin-bottom: 60px;
+}
+
+/* Remove default ASP.NET focus glow */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Primary button styling */
+.btn-primary {
+    background: linear-gradient(90deg, #7367f0, #9e95f5);
+    border: none;
+    color: white;
+}
+
+/* Prevent white flash on click */
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:focus-visible {
+    background: linear-gradient(90deg, #7367f0, #9e95f5);
+    border: none;
+    color: white;
+    box-shadow: none;
+}
+
+/* Button hover effect */
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* Card animation (features, pricing etc.) */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Section spacing */
+.section-py {
+    padding: 80px 0;
+}
+
+/* Center hero text */
+#hero h1 {
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background: #2f2b45;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

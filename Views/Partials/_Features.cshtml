@@ -1,0 +1,18 @@
+@model List<MaterialLandingApp.Models.FeatureModel>
+
+<section id="features" class="py-5">
+<div class="container">
+<div class="row">
+
+@foreach (var feature in Model)
+{
+    <div class="col-md-4 text-center">
+        <i class="@feature.Icon fs-1"></i>
+        <h4>@feature.Title</h4>
+        <p>@feature.Description</p>
+    </div>
+}
+
+</div>
+</div>
+</section>

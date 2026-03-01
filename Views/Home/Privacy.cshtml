@@ -1,0 +1,22 @@
+﻿@model LandingPageViewModel
+@{
+Layout = "_Layout";
+}
+
+@await Html.PartialAsync("~/Views/Partials/_Hero.cshtml", Model)
+
+@await Html.PartialAsync("~/Views/Partials/_Customers.cshtml")
+
+@await Component.InvokeAsync("DashboardBoxes", Model.DashboardBoxes)
+
+@await Html.PartialAsync("~/Views/Partials/_Features.cshtml", Model.Features)
+
+@await Html.PartialAsync("~/Views/Partials/_Pricing.cshtml", Model.PricingPlans)
+
+@await Html.PartialAsync("~/Views/Partials/_Team.cshtml", Model.TeamMembers)
+
+@await Html.PartialAsync("~/Views/Partials/_FAQ.cshtml", Model.FAQs)
+
+@await Html.PartialAsync("~/Views/Partials/_ReviewSlider.cshtml", Model.Reviews)
+
+@await Html.PartialAsync("~/Views/Partials/_TablePartial.cshtml", Model.TableRows)

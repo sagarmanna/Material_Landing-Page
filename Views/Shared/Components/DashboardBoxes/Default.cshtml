@@ -1,0 +1,29 @@
+@model List<MaterialLandingApp.Models.DashboardBoxModel>
+
+@if (Model != null)
+{
+<div class="row text-center mt-5">
+
+@foreach (var box in Model)
+{
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card shadow-sm">
+
+            <div class="card-body">
+
+                <i class="@box.Icon fs-1 text-primary"></i>
+
+                <h3 class="mt-3">@box.Value</h3>
+
+                <p>@box.Title</p>
+
+            </div>
+
+        </div>
+
+    </div>
+}
+
+</div>
+}
