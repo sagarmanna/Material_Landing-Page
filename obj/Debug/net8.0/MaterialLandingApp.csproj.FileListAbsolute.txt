@@ -13,6 +13,7 @@ C:\MaterialLandingApp\obj\Debug\net8.0\MaterialLandingApp.csproj.CoreCompileInpu
 C:\MaterialLandingApp\obj\Debug\net8.0\MaterialLandingApp.MvcApplicationPartsAssemblyInfo.cache
 C:\MaterialLandingApp\obj\Debug\net8.0\MaterialLandingApp.RazorAssemblyInfo.cache
 C:\MaterialLandingApp\obj\Debug\net8.0\MaterialLandingApp.RazorAssemblyInfo.cs
+C:\MaterialLandingApp\obj\Debug\net8.0\MaterialLandingApp.sourcelink.json
 C:\MaterialLandingApp\obj\Debug\net8.0\staticwebassets.build.json
 C:\MaterialLandingApp\obj\Debug\net8.0\staticwebassets.development.json
 C:\MaterialLandingApp\obj\Debug\net8.0\staticwebassets\msbuild.MaterialLandingApp.Microsoft.AspNetCore.StaticWebAssets.props

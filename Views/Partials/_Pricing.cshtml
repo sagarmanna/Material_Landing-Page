@@ -1,26 +1,36 @@
 @model List<MaterialLandingApp.Models.PricingPlanModel>
 
 <section id="pricing" class="py-5">
+
 <div class="container">
-<div class="row">
 
-@foreach (var plan in Model)
+<div class="row text-center">
+
+@foreach(var p in Model)
 {
-    <div class="col-md-4 text-center">
-        <div class="card shadow-sm p-4">
+<div class="col-md-4">
 
-            <h4>@plan.Name</h4>
+<div class="card shadow-sm">
 
-            <h2>$@plan.Price</h2>
+<div class="card-body">
 
-            <button class="btn btn-primary">
-                Choose Plan
-            </button>
+<h4>@p.Name</h4>
 
-        </div>
-    </div>
+<h1>$@p.Price</h1>
+
+<button class="btn btn-primary w-100">
+Choose Plan
+</button>
+
+</div>
+
+</div>
+
+</div>
 }
 
 </div>
+
 </div>
+
 </section>

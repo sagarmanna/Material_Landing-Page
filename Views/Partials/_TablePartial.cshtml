@@ -1,28 +1,38 @@
 @model List<MaterialLandingApp.Models.TableRowModel>
 
-<section class="container py-5">
+<section class="py-5">
+
+<div class="container">
 
 <table class="table">
+
 <thead>
+
 <tr>
-<th>NAME</th>
-<th>EMAIL</th>
-<th>STATUS</th>
+<th>Name</th>
+<th>Email</th>
+<th>Status</th>
 </tr>
+
 </thead>
 
 <tbody>
 
-@foreach(var row in Model)
+@foreach(var r in Model)
 {
 <tr>
-<td>@row.Name</td>
-<td>@row.Email</td>
-<td>@row.Status</td>
+
+<td>@r.Name</td>
+<td>@r.Email</td>
+<td>@r.Status</td>
+
 </tr>
 }
 
 </tbody>
+
 </table>
+
+</div>
 
 </section>

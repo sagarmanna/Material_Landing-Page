@@ -1,21 +1,26 @@
-@model MaterialLandingApp.Models.LandingPageViewModel
-
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
 
 <div class="container">
 
-<a class="navbar-brand">Materialize</a>
+<a class="navbar-brand fw-bold" href="#">Materialize</a>
 
-<ul class="navbar-nav ms-auto">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-@foreach(var item in Model.MenuItems)
-{
-<li class="nav-item">
-<a class="nav-link" href="@item.Url">@item.Name</a>
-</li>
-}
+<div class="collapse navbar-collapse justify-content-end" id="navMenu">
+
+<ul class="navbar-nav">
+
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+<li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+<li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+<li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
 
 </ul>
+
+</div>
 
 </div>
 

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MaterialLandingApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68bc13fe0ee9ed57aa741f9fee230e02597ae832")]
 [assembly: System.Reflection.AssemblyProductAttribute("MaterialLandingApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MaterialLandingApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

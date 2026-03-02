@@ -1,42 +1,68 @@
-@model MaterialLandingApp.Models.LandingPageViewModel
-
 <!DOCTYPE html>
 <html>
-
 <head>
 
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<link rel="stylesheet" href="~/material-theme/assets/core.css"/>
-<link rel="stylesheet" href="~/material-theme/assets/front-page.css"/>
-<link rel="stylesheet" href="~/material-theme/assets/front-page-landing.css"/>
-<link rel="stylesheet" href="~/material-theme/assets/swiper.css"/>
-<link rel="stylesheet" href="~/material-theme/assets/iconify-icons.css"/>
-<link rel="stylesheet" href="~/material-theme/assets/node-waves.css"/>
-<link rel="stylesheet" href="~/material-theme/assets/demo.css"/>
+<title>Materialize Landing</title>
+
+<link rel="stylesheet" href="~/material-theme/assets/core.css" />
+<link rel="stylesheet" href="~/material-theme/assets/front-page.css" />
+<link rel="stylesheet" href="~/material-theme/assets/front-page-landing.css" />
+<link rel="stylesheet" href="~/material-theme/assets/swiper.css" />
+<link rel="stylesheet" href="~/material-theme/assets/iconify-icons.css" />
+<link rel="stylesheet" href="~/material-theme/assets/node-waves.css" />
+<link rel="stylesheet" href="~/material-theme/assets/nouislider.css" />
+<link rel="stylesheet" href="~/material-theme/assets/pickr-themes.css" />
+<link rel="stylesheet" href="~/material-theme/assets/demo.css" />
 
 </head>
 
 <body>
 
-@await Html.PartialAsync("_Header", Model)
+@await Html.PartialAsync("_Header")
 
 @RenderBody()
 
 @await Html.PartialAsync("_Footer")
 
+<!-- JS Files -->
+<script src="~/material-theme/assets/helpers.js"></script>
 <script src="~/material-theme/assets/bootstrap.js"></script>
 <script src="~/material-theme/assets/front-main.js"></script>
 <script src="~/material-theme/assets/front-page-landing.js"></script>
+<script src="~/material-theme/assets/swiper.js"></script>
+<script src="~/material-theme/assets/node-waves.js"></script>
 
 <script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
-anchor.addEventListener('click',function(e){
-e.preventDefault();
-document.querySelector(this.getAttribute('href'))
-.scrollIntoView({behavior:'smooth'});
+document.addEventListener("DOMContentLoaded", function () {
+
+if (document.querySelector(".logo-slider")) {
+
+new Swiper(".logo-slider", {
+
+slidesPerView: 5,
+spaceBetween: 40,
+loop: true,
+
+autoplay: {
+delay: 2000,
+disableOnInteraction: false
+},
+
+breakpoints: {
+
+992: { slidesPerView: 5 },
+768: { slidesPerView: 3 },
+576: { slidesPerView: 2 }
+
+}
+
 });
+
+}
+
 });
 </script>
 

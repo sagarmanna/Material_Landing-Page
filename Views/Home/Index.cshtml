@@ -1,9 +1,8 @@
-﻿@model MaterialLandingApp.Models.LandingPageViewModel
-@{
-Layout = "_Layout";
-}
+﻿@model LandingPageViewModel
 
 @await Html.PartialAsync("~/Views/Partials/_Hero.cshtml")
+
+@await Html.PartialAsync("~/Views/Partials/_Customers.cshtml")
 
 @await Html.PartialAsync("~/Views/Partials/_Features.cshtml", Model.Features)
 
@@ -14,3 +13,5 @@ Layout = "_Layout";
 @await Html.PartialAsync("~/Views/Partials/_FAQ.cshtml", Model.FAQs)
 
 @await Html.PartialAsync("~/Views/Partials/_TablePartial.cshtml", Model.TableRows)
+
+@await Html.PartialAsync("~/Views/Partials/_CTA.cshtml")

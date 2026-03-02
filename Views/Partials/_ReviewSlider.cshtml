@@ -1,22 +1,28 @@
 @model List<MaterialLandingApp.Models.ReviewModel>
 
-<div id="reviewCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+<section class="section-py">
 
-<div class="carousel-inner">
+<div class="container">
 
-@for (int i = 0; i < Model.Count; i++)
+<h2 class="text-center mb-5">What Customers Say</h2>
+
+<div class="swiper review-slider">
+
+<div class="swiper-wrapper">
+
+@foreach(var r in Model)
 {
-var active = i == 0 ? "active" : "";
+<div class="swiper-slide">
 
-<div class="carousel-item @active">
+<div class="card p-4 shadow-sm text-center">
 
-<div class="card text-center shadow p-4">
+<p class="text-muted">
+@r.Comment
+</p>
 
-<h5>@Model[i].Company</h5>
+<h6>@r.Customer</h6>
 
-<p>@Model[i].Comment</p>
-
-<strong>@Model[i].Customer</strong>
+<small class="text-muted">@r.Company</small>
 
 </div>
 
@@ -26,3 +32,7 @@ var active = i == 0 ? "active" : "";
 </div>
 
 </div>
+
+</div>
+
+</section>

@@ -298,3 +298,55 @@
 :dir(rtl) .landing-team .team-image-box .card-img-position {
   transform: translateX(50%) !important;
 }
+/* HERO */
+
+.landing-hero{
+padding:120px 0;
+background:linear-gradient(180deg,#f5f5ff 0%,#ffffff 100%);
+position:relative;
+overflow:hidden;
+}
+
+.landing-hero-img{
+max-width:650px;
+border-radius:12px;
+box-shadow:0 20px 60px rgba(0,0,0,0.15);
+}
+
+/* floating cards */
+
+.hero-card-left{
+position:absolute;
+left:80px;
+top:350px;
+width:180px;
+}
+
+.hero-card-right{
+position:absolute;
+right:120px;
+top:360px;
+width:200px;
+}
+
+.hero-card-center{
+position:absolute;
+left:50%;
+top:480px;
+width:190px;
+transform:translateX(-50%);
+}
+.client-logo{
+
+max-height:40px;
+opacity:0.6;
+transition:all 0.3s ease;
+
+}
+
+.client-logo:hover{
+
+opacity:1;
+transform:scale(1.1);
+
+}
